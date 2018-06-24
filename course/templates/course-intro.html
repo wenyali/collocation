@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block bodycontent %}
+
+		<!-- Blog -->
+		<div id="blog" class="section">
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- row -->
+				<div class="row">
+
+					<!-- main blog -->
+					<div id="main" class="col-md-9">
+
+
+						<!-- blog post -->
+						<div class="blog-post">
+                            <p>应用名称：<span>{{ list.title }}</span></p>
+                            <p>应用详情：{{ list.intro }}</p>
+                            <p>应用短连接：></p>
+                            <p>应用二维码：</p>
+                            <p>应用类型：{{ list.get_public_type_display }}</p>
+                            <p>版本号：1.0.0</p>
+                            <p>应用大小：34k</p>
+                            <p>更新于 {{ list.ctime }}</p>
+
+						</div>
+						<!-- /blog post -->
+
+					</div>
+					<!-- /main blog -->
+
+
+				</div>
+				<!-- row -->
+
+			</div>
+			<!-- container -->
+
+		</div>
+		<!-- /Blog -->
+
+{% endblock %}

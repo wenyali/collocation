@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header %}
+<header id="header">
+	<div class="container">
+
+		<div class="navbar-header">
+			<!-- Logo -->
+			<div class="navbar-brand">
+				<a class="logo" href="/">
+					<img src="/static/web/img/PYE-logo-black.png" alt="logo">
+				</a>
+			</div>
+			<!-- /Logo -->
+
+			<!-- Mobile toggle -->
+			<button class="navbar-toggle">
+				<span></span>
+			</button>
+			<!-- /Mobile toggle -->
+		</div>
+
+		<!-- Navigation -->
+		<nav id="nav">
+			<ul class="main-menu nav navbar-nav navbar-right">
+				<li><a href="/">首页</a></li>
+                <li><a href="*">使用文档</a></li>
+                <li><a href="/app/">我的应用</a></li>
+                <li><a href="/contact/">联系我们</a></li>
+			</ul>
+		</nav>
+		<!-- /Navigation -->
+
+	</div>
+</header>
+{% endblock %}
+
+{% block bodycontent %}
+
+		<!-- Contact -->
+		<div id="contact" class="section">
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- row -->
+				<div class="row">
+
+					<!-- contact form -->
+					<div class="col-md-6">
+						<div class="contact-form">
+							<h4>Send A Message</h4>
+							<form>
+								<input class="input" type="text" name="name" placeholder="Name">
+								<input class="input" type="email" name="email" placeholder="Email">
+								<input class="input" type="text" name="subject" placeholder="Subject">
+								<textarea class="input" name="message" placeholder="Enter your Message"></textarea>
+								<button class="main-button icon-button pull-right">Send Message</button>
+							</form>
+						</div>
+					</div>
+					<!-- /contact form -->
+
+					<!-- contact information -->
+					<div class="col-md-5 col-md-offset-1">
+						<h4>Contact Information</h4>
+						<ul class="contact-details">
+							<li><i class="fa fa-envelope"></i>2917073217@qq.com</li>
+							<li><i class="fa fa-phone"></i>173-4655-7495</li>
+							<li><i class="fa fa-map-marker"></i>北京市朝阳区</li>
+						</ul>
+
+						<!-- contact map -->
+						<div id="contact-map"></div>
+						<!-- /contact map -->
+
+					</div>
+					<!-- contact information -->
+
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+
+		</div>
+		<!-- /Contact -->
+
+{% endblock %}
